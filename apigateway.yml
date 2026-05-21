@@ -19,8 +19,8 @@ spring:
             - id: micro-server-nombres
               uri: lb://ANTHONY
               predicates:
-                - Path=/nombres/**
+                - Path=/nombres,/nombres/**
             - id: micro-server-apellidos
               uri: lb://CHANGOTASIG
               predicates:
-                - Path=/apellidos/**
+                - Path=/apellidos,/apellidos/**
